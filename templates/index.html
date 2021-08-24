@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+
+{% block title %}This is an example page{% endblock %}
+
+{% block head %}
+      <script type="module" src="{{ url_for('static', filename='jscript.js') }}" ></script>
+{% endblock %}
+
+
+
+{% block content %}
+
+
+    <div class="parallax">
+
+        <div class="parallax__layer">
+                <img src="{{url_for('static', filename='css/1back2.png')}}" style="z-index: -1000;">
+        </div>
+
+        <div class="swing">
+                <img src="{{url_for('static', filename='css/swing - Copy.png')}}" style="z-index: -900">
+        </div>
+        <div class="a_title parallax__layer parallax_introducing" style="z-index: 1">
+                <h1>Hi I'm Enes.<br>A Developer.</h1>
+                <p style="color:rgb(236, 234, 203); font-size: 2.35vw; margin-top: -2%; margin-left: 0.3%;">Currently python developer.</p>
+        </div>
+
+        <div class="parallax_main">
+            <img src="{{ url_for('static', filename='css/1front.png') }}">
+        </div>
+
+        <div class="oh_its_me">
+            <p>
+                <for_font style="font-family: dfont8; font-size: 1.65vw;">Programmer</for_font>
+                <br>+<br>
+                <for_font style="font-family: dfont9; font-size: 2.55vw;">Guitarist/Musician</for_font>
+                <br>+<br>
+                <for_font style="font-family: dfont10; font-size: 2.2vw;">Car enthusiast/<br>Designer</for_font>
+                <br>+<br>
+                <for_font style="font-family: dfont2; font-size: 2.9vw;">Dreamer</for_font>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </p>
+            <div class="appear-wrapper">
+                <div class="appear appear-animation" style="margin-left: 1%; margin-top: -2%;">
+                    <img src="https://media.giphy.com/media/iIephUVYDziLt2uOy9/giphy.gif">
+                </div>
+            </div>
+            <div>
+                <p style="margin-left: 38%; margin-top: -70%; position: absolute; opacity: 0.15; color: rgb(200, 128, 55);
+                 font-family: dfont7; font-size: 6vw;">ME</p>
+            </div>
+        </div>
+
+        <div class="pacman">
+            <img src="{{ url_for('static', filename='css/pacman14.png') }}">
+        </div>
+
+
+<!--contact-->
+        <div id="contact" style="margin-top: 9.4%;">
+            <div class="upwork">
+                <a href="https://www.upwork.com/o/profiles/users/~01385610bc0830278b/" class="upwork-a"
+                onmouseover="hide_element('explanation')" onmouseout="show_element('explanation')">
+                    S
+                </a>
+                <p class="upwork-p">
+                    my upwork profile
+                </p>
+            </div>
+
+            <div class="linko">
+                <a href="{{ url_for('links') }}" class="linko-a" onmouseover="hide_element('explanation')" onmouseout="show_element('explanation')">
+                    H
+                </a>
+                <p style="margin-top 80%;" class="linko-p" >'links page' to images I used here</p>
+            </div>
+
+            <div class="email">
+                <p class="email-a" onmouseover="hide_element('explanation')" onmouseout="show_element('explanation')">
+                    R
+                </p>
+                <p style="margin-top 80%;" class="email-p">my email address: "mforstrtp@protonmail.com" <br>
+                    (it can be changed after 1-2 year, I recommend make the contact through upwork for now!)</p>
+            </div>
+
+
+            <p class="profile-p" onmouseover="hide_element('explanation');"
+                                 onmouseout="show_element('explanation');">
+                E
+            </p>
+            <img class="profile-img" src="{{ url_for('static', filename='css/IMG_20210817_175537(2).jpg') }}">
+            <p class="profile-me-p">me again,<br>HI😀</p>
+
+
+            <div class="letters">
+                <p class="letters-p" onmouseover="hide_element('explanation'); hide_element('profile-p');
+                hide_element('email-a'); hide_element('linko-a'); hide_element('upwork-a'); hide_element('sub-explanation');"
+                   onmouseout="show_element('explanation'); show_element('profile-p'); show_element('email-a');
+                   show_element('linko-a'); show_element('upwork-a'); show_element('sub-explanation');">
+                    K
+                </p>
+                <img class="letters-img" src="{{ url_for('static', filename='css/shrek-donkey3.jpg') }}">
+            </div>
+
+            <div class="explanation">
+                <p>hover on letters</p>
+            </div>
+            <div class="sub-explanation">
+                <p class="explanation-p">s:upwork<br>r:email</p>
+            </div>
+        </div>
+
+        <div id="bottom" style="display: inline-block; margin-top: 50%;"></div>
+    </div>
+
+    <div class="phone">
+
+        <div class="phone-background">
+            <img src="{{ url_for('static', filename='css/mix-custom-18.png') }}" class="phone-background">
+        </div>
+
+        <div class="phone-main">
+            <div class="a_title" >
+                <h1>Hi I'm Enes.<br>A Developer.</h1>
+                <p style="color:rgb(236, 234, 203); font-size: 5vw; margin-top: -2%; margin-left: 0.3%;">Currently python developer.</p>
+            </div>
+            <div class="oh_its_me">
+                <p>
+                    <for_font style="font-family: dfont8; font-size: 1.65vw; margin-left: 54%;">Programmer</for_font>
+                    <br><p style="margin: -12% auto -12% 24%;">+</p><br>
+                    <for_font style="font-family: dfont9; font-size: 2.55vw;">Guitarist/Musician</for_font>
+                    <br>+<br>
+                    <for_font style="font-family: dfont10; font-size: 2.2vw;">Car enthusiast/<br>Designer</for_font>
+                    <br><p style="margin: 4% auto -15% 24%;">+</p><br>
+                    <for_font style="font-family: dfont2; font-size: 2.9vw; margin-left: 52%;">Dreamer</for_font>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </p>
+                <div class="appear-wrapper">
+                    <div class="appear appear-animation" style="margin-left: 57%; margin-top: -127%;">
+                        <img src="https://media.giphy.com/media/iIephUVYDziLt2uOy9/giphy.gif">
+                    </div>
+                </div>
+                <div>
+                    <p style="margin-left: 94%; margin-top: -75%; position: absolute; opacity: 0.15; color: rgb(200, 128, 55);
+                     font-family: dfont7; font-size: 6vw;">ME</p>
+                </div>
+            </div>
+            <div class="contact">
+                <a class="phone-upwork" href="https://www.upwork.com/o/profiles/users/~01385610bc0830278b/"><p class="phone-upwork1">upwork</p><p class="phone-upwork2">profile</p></a>
+                <a class="phone-links" href="/links"><p>links</p><p>page</p></a>
+                <button class="copy-email" onclick="show_element('emaill')"><p>show</p><p>email</p></button>
+            </div>
+
+                <p class="emaill" style="position: absolute; margin-top: 205%; color: red; margin-left: 40%; color: rgb(255, 140, 26); visibility: hidden; font-size: 4vw;">
+                    mforstrtp@protonmail.com
+                </p>
+        </div>
+        <img src="{{ url_for('static', filename='css/IMG_20210817_175537.jpg') }}" class="phone-profile-image">
+
+    </div>
+
+    <div class="thats_it_not_more">
+        <div class="grid-container">
+            <div class="a_title grid-item" style="z-index: 1">
+                    <h1>Hi I'm Enes.<br>A Developer.</h1>
+                    <p style="color:rgb(236, 234, 203);margin-top: -2%; margin-left: 0.3%;">Currently python developer.</p>
+            </div>
+            <div class="upwork grid-item">
+                <a href="https://www.upwork.com/o/profiles/users/~01385610bc0830278b/">
+                    <img src="static/css/upwork-squarelogo-1555372513282.png">
+                </a>
+            </div>
+            <div class="links grid-item">
+                <a href="links">
+                    <p>'Links Page' to links of images that I used while making this website.</p><p>(depend on aspect ratio and height)</p>
+                </a>
+            </div>
+            <div class="email grid-item">
+                mforstrtp@protonmail.com
+            </div>
+        </div>
+    </div>
+
+
+    <script src="{{ url_for('static', filename='jscript.js') }}"></script>
+{% endblock %}

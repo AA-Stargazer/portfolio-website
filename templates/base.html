@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    {% block head %} {% endblock %}
+
+    <style>
+        {% block style %} {%endblock %}
+    </style>
+
+</head>
+<body>
+    <nav class="navbar">
+        <li><a href="#bottom">work/contact</a></li>
+    </nav>
+    {% block content %} {% endblock %}
+    <script>function a() {
+    document.getElementById('explanation-p').scrollIntoView();
+    }
+</script>
+</body>
+</html>

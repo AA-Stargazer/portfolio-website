@@ -1,0 +1,746 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* animation */
+@keyframes increasing-opacity {
+    0% {
+        opacity: 0;
+    }
+
+    %100 {
+        opacity: 1;
+    }
+}
+/* --- */
+
+
+/* fonts */
+@font-face {
+    font-family: "dfont2";
+    src: url("fonts/Leonardo-G59P.ttf");
+}
+
+@font-face {
+    font-family: "dfont4";
+    src: url("fonts/Cambria-Font-For Android.ttf");
+}
+
+@font-face {
+    font-family: "dfont7";
+    src: url("fonts/Balcony101-W5PA.ttf");
+}
+
+@font-face {
+    font-family: "dfont8";
+    src: url("fonts/PokemonGb-RAeo.ttf");
+}
+
+@font-face {
+    font-family: "dfont9";
+    src: url("fonts/Jazz101-dJo7.ttf");
+}
+
+@font-face {
+    font-family: "dfont10";
+    src: url("fonts/Parikesit-0ZYR.ttf");
+}
+/* --- */
+
+
+/* base.html */
+.navbar {
+    position: fixed;
+    z-index: 1;
+    font-size: 1.7vw;
+    display: inline-block;
+    pointer-events: auto;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar li a {
+    margin-left: 55%;
+    color: rgb(0, 153, 153);
+    text-decoration: 0;
+    padding: 1.2vw;
+    background: rgb(204, 255, 255, 0.1);
+    border-radius: 10%;
+}
+
+.navbar li a:hover {
+    border: 1vw transparent;
+    border-radius: 10%;
+    background-color: rgb(0, 51, 153, 0.1);
+    color: rgb(179, 255, 255);
+}
+/* --- */
+
+
+/*****************/
+
+@media (max-aspect-ratio: 198/100) and (min-aspect-ratio: 188/100) and (min-height: 810px) {
+
+    .phone {
+        display: none;
+    }
+
+    .thats_it_not_more {
+        display: none;
+    }
+
+    /*******************/
+    ::-webkit-scrollbar {
+      width: 0.5vw;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 0.05vw black;
+      border-radius: 1vw;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: rgb(255, 140, 26);
+      border-radius: 1vw;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: black;
+    }
+
+
+    /*************/
+    .a_title {
+        margin-top: 16%;
+    }
+
+    .a_title h1 {
+        font-family: 'dfont4';
+        font-size: 6vw;
+        font-weight: 200;
+        background-image: linear-gradient(to right, rgb(0, 160, 160) 1%, rgb(0, 255, 255) 20%,
+                                          rgb(255, 255, 255) 45%, rgb(255, 26, 255) 54%, rgb(179, 0, 179) 70%,
+                                          rgb(255, 153, 204) 99%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        display: inline-block;
+    }
+
+    .parallax {
+        perspective: 0.052vw;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 100vw;
+        position: unset;
+    }
+
+    .parallax__layer {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 8%;
+        bottom: 0;
+        transform: scale(1.179);
+    }
+
+
+    .swing {
+        position: absolute;
+        top: 8.9%;
+        right: -28.5%;
+        bottom: 0;
+        transform: translateZ(-0.0156vw) scale(1.9);
+    }
+
+    .swing img {
+        z-index; 1;
+        width: 100%;
+    }
+
+    .parallax_introducing {
+      transform: translateZ(-0.0728vw) scale(2.4);
+    }
+
+    .parallax_main {
+        height: 400vh;
+        position: sticky;
+        top: -183%;
+    }
+
+    .parallax_main img{
+        width: 100%;
+    }
+
+    .oh_its_me {
+        display: inline-block;
+        position: sticky;
+        margin-top: -54%;
+        top: 18%;
+        left: 18%;
+        margin-bottom: 70%;
+        z-index: 5;
+        padding-bottom: 5%;
+    }
+
+    .oh_its_me p {
+        background-color: transparent;
+        background: transparent;
+        font-size: 2.5vw;
+        color: red;
+        text-align: center;
+        z-index: 200;
+
+        background-image: linear-gradient(to bottom right, rgb(255, 179, 239) 1%, white, rgb(0, 255, 255) 90%);
+
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        display: inline-block;
+    }
+
+    .appear-wrapper {
+        width: 100%;
+        margin-left: -0%;
+    }
+
+    .appear {
+        opacity: 0;
+    }
+
+    .appear img {
+        width: 25vw;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      .appear {
+        transition: opacity 1s ease, transform 2s ease;
+      }
+    }
+
+    .appear-transition {
+        opacity: 1;
+        transform: none;
+    }
+
+    .pacman {
+        position: sticky;
+        left: 6.6%;
+        top: -4%;
+        margin-top: -204%;
+        margin-bottom: -46%;
+        transform: scale(1.15);
+        z-index: 5;
+    }
+
+    .pacman img{
+        width: 87.75%;
+    }
+
+
+    /******************* contact *******************/
+    .upwork {
+        display: inline;
+        margin-top: 69%;
+        position: absolute;
+        z-index: 6;
+        margin-left: 22.35%;
+        margin-top: 62.52%;
+    }
+
+    .upwork-a {
+        display: inline-block;
+        position: absolute;
+        margin: 46.8% auto auto -32.2%;
+        font-size: 1.716vw;
+        text-decoration: none;
+        color: rgb(0, 153, 51);
+    }
+
+    .upwork-a:before {
+      content:'';
+      position:absolute;
+      padding: 2em;
+      margin: -2em;
+    }
+
+    .upwork-p {
+        font-size: 2.08vw;
+        visibility: hidden;
+    }
+
+    .upwork-a:hover ~ .upwork-p{
+        visibility: visible;
+        color: rgb(0, 153, 51);
+    }
+
+    .upwork-a:hover {
+        opacity: 0;
+    }
+
+
+    .linko {
+        position: absolute;
+        z-index: 6;
+        display: inline-block;
+        font-size: 1.716vw;
+        margin-top: 64.52%;
+        margin-left: 17.2%;
+    }
+
+    .linko-a {
+        position: absolute;
+        margin-top: 19.2%;
+        margin-left: 24.4%;
+        text-decoration: none;
+        color: rgb(0, 153, 204);
+    }
+
+    .linko-a:before {
+      content:'';
+      position:absolute;
+      padding: 2em;
+      margin: -2em;
+    }
+
+    .linko-p {
+        font-size: 2.08vw;
+        visibility: hidden;
+        margin: 0;
+    }
+
+    .linko-a:hover ~ .linko-p{
+        visibility: visible;
+        color: rgb(0, 153, 204);
+    }
+
+    .linko-a:hover {
+        opacity: 0;
+    }
+
+
+    .email {
+        position: absolute;
+        z-index: 7;
+        display: inline-block;
+        font-size: 1.716vw;
+        margin-top: 59%;
+        margin-left: 15.2%;
+        color: red;
+        cursor: default;
+    }
+
+    .email-a {
+        position: absolute;
+        margin-top: 12.85%;
+        margin-left: 18.5%;
+        color: rgb(255, 140, 26);
+        text-decoration: none;
+    }
+
+    .email-a:before {
+      content:'';
+      position:absolute;
+      padding: 2em;
+      margin: -2em;
+    }
+
+    .email-p {
+        font-size: 2.4vw;
+        width: 70%;
+        margin: 0;
+        visibility: hidden;
+    }
+
+    .email-a:hover ~ .email-p {
+        visibility: visible;
+        color: rgb(255, 140, 26);
+    }
+
+    .email-a:hover {
+        opacity: 0;
+    }
+
+    .profile-p {
+        font-size: 1.716vw;
+        position: absolute;
+        z-index: 6;
+        color: rgb(200, 128, 55);
+        cursor: default;
+        margin-top: 69.9%;
+        margin-left: 37.8%;
+        color: rgb(188, 133, 133);
+    }
+
+    .profile-p:before {
+      content:'';
+      padding: 2em;
+      margin: -2em;
+    }
+
+    .profile-img {
+        position: absolute;
+        z-index: 5;
+        margin-top: 37%;
+        margin-left: 2%;
+        border-radius: 5%;
+        width: 15%;
+        visibility: hidden;
+    }
+
+    .profile-me-p {
+        position: absolute;
+        z-index: 5;
+        margin-top: 54%;
+        margin-left: 20%;
+        font-size: 2vw;
+        color: rgb(197, 155, 155);
+        visibility: hidden;
+    }
+
+
+    .profile-p:hover ~ .profile-img{
+        visibility: visible;
+    }
+
+    .profile-p:hover ~ .profile-me-p{
+        visibility: visible;
+    }
+
+    .profile-p:hover {
+        opacity: 0;
+    }
+
+    .letters {
+        position: absolute;
+        z-index: 5;
+        display: inline-block;
+        font-size: 1.716vw;
+        margin-top: 35%;
+        margin-left: 17.2%;
+        color: red;
+        cursor: default;
+    }
+
+    .letters-p {
+        position: absolute;
+        margin-top: 42.2%;
+        margin-left: 33%;
+        color: rgb(80, 82, 100);
+        z-index: 12;
+        text-decoration: none;
+    }
+
+    .letters-p:before {
+      content:'';
+      position:absolute;
+      padding: 2em;
+      margin: -2em;
+    }
+
+    .letters-img {
+        position: relative;
+        width: 80%;
+        visibility: hidden;
+        z-index: 10;
+        border-radius: 5%;
+        -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.95));
+    }
+
+    .letters-p:hover ~ .letters-img{
+        visibility: visible;
+    }
+
+    .letters-p:hover{
+        opacity: 0;
+    }
+
+    .explanation {
+        position: absolute;
+        font-size: 3.38vw;
+        color: grey;
+        z-index: 5;
+        margin-top: 60%;
+        margin-left: 20%;
+        opacity: 0.5;
+    }
+
+    .sub-explanation {
+        display: inline-block;
+        position: absolute;
+        z-index: 5;
+        margin-top: 71.3%;
+        margin-left: 28%;
+    }
+
+    .explanation-p {
+        font-size: 1.56vw;
+        color: grey;
+        opacity: 0.5;
+        -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+    }
+}
+
+@media (max-aspect-ratio: 12/10) {
+
+    .navbar {
+        display: none;
+    }
+
+    body {
+        margin:0;
+        padding:0;
+        text-align: center;
+    }
+
+    .parallax {
+        display: none;
+    }
+
+    .thats_it_not_more {
+        display: none;
+    }
+
+    .phone {
+        position: relative;
+        display: unset;
+        margin: 0;
+    }
+
+    .phone-background {
+        position: relative;
+        width: 100vw;
+        margin: 0 0 -5% 0;
+    }
+
+    .phone-main {
+        position: relative;
+        margin-top: -240%;
+        text-align: center;
+    }
+
+    .a_title {
+        color: red;
+        position: absolute;
+        margin-left: -34%;
+        margin-top: 10%;
+        font-size: 5vw;
+        background-image: linear-gradient(to right, rgb(0, 160, 160) 1%, rgb(0, 255, 255) 20%,
+                                          rgb(255, 255, 255) 45%, rgb(255, 26, 255) 54%, rgb(179, 0, 179) 70%,
+                                          rgb(255, 153, 204) 99%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        display: inline-block;
+        padding: 0;
+    }
+
+    .oh_its_me {
+        position: absolute;
+        margin-top: 87%;
+        margin-left: 12%;
+        font-size: 6vw;
+        background: linear-gradient(to bottom right, rgb(255, 179, 239) 1%, white, rgb(0, 255, 255) 90%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    .appear img {
+        width: 35vw;
+    }
+
+    .contact {
+        font-size: 2.8vw;
+    }
+
+    .phone-upwork {
+        position: absolute;
+        margin-top: 212.5%;
+        color: red;
+        margin-left: -43%;
+    }
+
+    .phone-upwork {
+        text-decoration: none;
+    }
+
+    .phone-upwork1 {
+         transform: rotate(-30deg);
+    }
+
+    .phone-upwork2 {
+        position: absolute;
+        transform: rotate(30deg);
+        margin-top: 8%;
+        margin-left: 2%;
+    }
+
+    .phone-links {
+        position: absolute;
+        margin-top: 212%;
+        margin-left: -15%;
+        color: red;
+        text-decoration: none;
+        color: rgb(147, 178, 240);
+        font-size: 3.2vw;
+    }
+
+    .copy-email {
+        position: absolute;
+        margin-top: 212%;
+        color: red;
+        margin-left: 8.3%;
+        width: 7vw;
+        height: 7vw;
+        background:none;
+        border:none;
+        cursor: pointer;
+        font-size: 3vw;
+        color: rgb(241, 152, 181);
+    }
+
+    .phone-profile-image {
+        margin-top: 212%;
+        margin-left: 77%;
+        width: 11%;
+        border-radius: 50%;
+    }
+
+    @media (min-aspect-ratio: 7/8) {
+        .phone-profile-image {
+            margin-left: 74%;
+        }
+    }
+
+}
+
+@media (max-aspect-ratio: 188/100) and (min-aspect-ratio: 12/10), (max-aspect-ratio: 198/100) and (min-aspect-ratio: 188/100) and (max-height: 810px), (min-aspect-ratio: 198/100) {
+
+    .body, html {
+        margin: 0;
+        overflow-x: hidden;
+        text-align: center;
+        background-image: url("simple.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .parallax {
+        display: none;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .thats_it_not_more{
+    }
+
+    .no-more-img {
+        left: -50%:
+        width: 100%;
+        position: absolute;
+        z-index: -100;
+    }
+
+    .grid-container {
+        position: fixed;
+        display: grid;
+        grid-template-areas:
+            'title title title'
+            'upwork links email';
+
+        grid-gap: 10vh;
+        left: 25%;
+        right: 25%;
+        margin-bottom: 10%;
+    }
+
+    @media (max-aspect-ratio: 1387/479) {
+        .grid-container {
+            left: 10%;
+            right: 10%;
+        }
+        @media (max-aspect-ratio: 1118/680) {
+            .grid-container {
+                left: 0%;
+                right: 0%;
+            }
+        }
+    }
+
+    @media (min-aspect-ratio: 1387/490) {
+        .grid-container {
+            left: 5%;
+            right: 5%;
+            margin-top: -3%;
+        }
+    }
+
+    .grid-item {
+        font-size: 4vh;
+        text-align: center;
+        padding: 3%;
+        margin: 3%;
+    }
+
+    .a_title {
+        grid-area: title;
+        color: red;
+        background-image: linear-gradient(to right, rgb(0, 160, 160) 1%, rgb(0, 255, 255) 20%,
+                                          rgb(255, 255, 255) 45%, rgb(255, 26, 255) 54%, rgb(179, 0, 179) 70%,
+                                          rgb(255, 153, 204) 99%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        margin-left: -6%;
+        font-size: 6vh;
+        margin-bottom: -6%;
+    }
+
+    .a_title p {
+        font-size: 3vh;
+    }
+
+    .upwork {
+        grid-area: upwork;
+    }
+
+    .upwork a img {
+        width: 30vh;
+    }
+
+    .links {
+        grid-area: links;
+        margin-bottom: 20%;
+        margin-top: -5%;
+        font-size: 2vw;
+    }
+
+    .links a {
+        text-decoration-line: none;
+        color: rgb(147, 178, 240);
+    }
+
+    .email {
+        grid-area: email;
+        margin-top: 22%;
+        color: rgb(241, 152, 181);
+    }
+}
