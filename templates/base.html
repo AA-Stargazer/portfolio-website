@@ -5,7 +5,7 @@
     <title>{% block title %} {% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     {% block head %} {% endblock %}
-
+    <link rel="shortcut icon" href="{{ url_for('static', filename='css/favicon.ico') }}">
     <style>
         {% block style %} {%endblock %}
     </style>

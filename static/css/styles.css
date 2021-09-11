@@ -250,44 +250,38 @@ body {
 
 
     /******************* contact *******************/
-    .upwork {
+    .upwork0 {
         display: inline;
         margin-top: 69%;
         position: absolute;
         z-index: 6;
         margin-left: 22.35%;
         margin-top: 62.52%;
+        font-size: 2vw;
     }
 
-    .upwork-a {
-        display: inline-block;
-        position: absolute;
-        margin: 46.8% auto auto -32.2%;
-        font-size: 1.716vw;
-        text-decoration: none;
-        color: rgb(0, 153, 51);
+    .upwork0-a img {
+        content:'';
+        position:absolute;
+        padding: 2em;
+        margin: -2em;
+        width: 12%;
+        margin-top: 23%;
+        margin-left: -64%;
     }
 
-    .upwork-a:before {
-      content:'';
-      position:absolute;
-      padding: 2em;
-      margin: -2em;
-    }
 
-    .upwork-p {
-        font-size: 2.08vw;
-        visibility: hidden;
-    }
-
-    .upwork-a:hover ~ .upwork-p{
-        visibility: visible;
-        color: rgb(0, 153, 51);
-    }
-
-    .upwork-a:hover {
+    .upwork0-p {
+        visibility; hidden;
         opacity: 0;
     }
+
+    .upwork0-a:hover ~ .upwork0-p{
+        visibility: visible;
+        color: green;
+        opacity: 1;
+    }
+
 
 
     .linko {
@@ -301,8 +295,8 @@ body {
 
     .linko-a {
         position: absolute;
-        margin-top: 19.2%;
-        margin-left: 24.4%;
+        margin-top: 18.9%;
+        margin-left: 22.4%;
         text-decoration: none;
         color: rgb(0, 153, 204);
     }
@@ -335,16 +329,16 @@ body {
         z-index: 7;
         display: inline-block;
         font-size: 1.716vw;
-        margin-top: 59%;
-        margin-left: 15.2%;
+        margin-top: 62%;
+        margin-left: 17.2%;
         color: red;
         cursor: default;
     }
 
     .email-a {
         position: absolute;
-        margin-top: 12.85%;
-        margin-left: 18.5%;
+        margin-top: 16.2%;
+        margin-left: 27.9%;
         color: rgb(255, 140, 26);
         text-decoration: none;
     }
@@ -378,8 +372,8 @@ body {
         z-index: 6;
         color: rgb(200, 128, 55);
         cursor: default;
-        margin-top: 69.9%;
-        margin-left: 37.8%;
+        margin-top: 69.5%;
+        margin-left: 37.5%;
         color: rgb(188, 133, 133);
     }
 
@@ -422,47 +416,46 @@ body {
         opacity: 0;
     }
 
-    .letters {
+
+    .github {
         position: absolute;
-        z-index: 5;
+        z-index: 7;
         display: inline-block;
         font-size: 1.716vw;
-        margin-top: 35%;
-        margin-left: 17.2%;
+        margin-top: 63%;
+        margin-left: 20.2%;
         color: red;
         cursor: default;
     }
 
-    .letters-p {
+    .github-a {
         position: absolute;
-        margin-top: 42.2%;
-        margin-left: 33%;
-        color: rgb(80, 82, 100);
-        z-index: 12;
+        margin-top: 24.2%;
+        margin-left: 83.5%;
+        color: rgb(255, 140, 26);
         text-decoration: none;
     }
 
-    .letters-p:before {
+    .github-a:before {
       content:'';
       position:absolute;
       padding: 2em;
       margin: -2em;
     }
 
-    .letters-img {
-        position: relative;
-        width: 80%;
+    .github-p {
+        font-size: 2.4vw;
+        width: 70%;
+        margin: 0;
         visibility: hidden;
-        z-index: 10;
-        border-radius: 5%;
-        -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.95));
     }
 
-    .letters-p:hover ~ .letters-img{
+    .github-a:hover ~ .github-p {
         visibility: visible;
+        color: rgb(204, 204, 0);
     }
 
-    .letters-p:hover{
+    .github-a:hover {
         opacity: 0;
     }
 
